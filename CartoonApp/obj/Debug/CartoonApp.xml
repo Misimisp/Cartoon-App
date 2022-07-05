@@ -1,0 +1,68 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CartoonApp
+</name>
+</assembly>
+<members>
+<member name="P:CartoonApp.StickFigureDimensions.HeadDiameter">
+	<summary> 
+ Get the diameter of the head for a stick figure 
+ </summary>
+</member><member name="P:CartoonApp.StickFigureDimensions.HeadRadius">
+	<summary> 
+ Get the radius of the head for a stick figure 
+ </summary>
+</member><member name="P:CartoonApp.StickFigureDimensions.BodySize">
+	<summary> 
+ Get the size of the body for a stick figure 
+ </summary>
+</member><member name="P:CartoonApp.StickFigureDimensions.MidBody">
+	<summary> 
+ Get the middle size of the body for a stick figure 
+ </summary>
+</member><member name="P:CartoonApp.StickFigureDimensions.LegSize">
+	<summary> 
+ Get the size of the leg for a stick figure 
+ </summary>
+</member><member name="P:CartoonApp.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:CartoonApp.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:CartoonApp.My.Resources.Resources.f_arms_straight">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:CartoonApp.My.Resources.Resources.m_arms_down">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:CartoonApp.My.Resources.Resources.m_arms_straight">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:CartoonApp.My.Resources.Resources.m_arms_up">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:CartoonApp.My.Resources.Resources.m_arms_up_neck">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:CartoonApp.My.Resources.Resources.m_running_right">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:CartoonApp.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

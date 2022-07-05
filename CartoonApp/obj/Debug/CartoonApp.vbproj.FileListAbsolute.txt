@@ -1,0 +1,13 @@
+G:\Documents\visual studio 2012\Projects\CartoonApp\CartoonApp\bin\Debug\CartoonApp.exe.config
+G:\Documents\visual studio 2012\Projects\CartoonApp\CartoonApp\bin\Debug\CartoonApp.exe
+G:\Documents\visual studio 2012\Projects\CartoonApp\CartoonApp\bin\Debug\CartoonApp.pdb
+G:\Documents\visual studio 2012\Projects\CartoonApp\CartoonApp\bin\Debug\CartoonApp.xml
+G:\Documents\visual studio 2012\Projects\CartoonApp\CartoonApp\bin\Debug\CButtonLib.dll
+G:\Documents\visual studio 2012\Projects\CartoonApp\CartoonApp\obj\Debug\CartoonApp.frmCartoon.resources
+G:\Documents\visual studio 2012\Projects\CartoonApp\CartoonApp\obj\Debug\CartoonApp.Resources.resources
+G:\Documents\visual studio 2012\Projects\CartoonApp\CartoonApp\obj\Debug\CartoonApp.vbproj.GenerateResource.Cache
+G:\Documents\visual studio 2012\Projects\CartoonApp\CartoonApp\obj\Debug\CartoonApp.exe
+G:\Documents\visual studio 2012\Projects\CartoonApp\CartoonApp\obj\Debug\CartoonApp.xml
+G:\Documents\visual studio 2012\Projects\CartoonApp\CartoonApp\obj\Debug\CartoonApp.pdb
+G:\Documents\visual studio 2012\Projects\CartoonApp\CartoonApp\bin\Debug\gLabel.dll
+G:\Documents\visual studio 2012\Projects\CartoonApp\CartoonApp\obj\Debug\CartoonApp.frmAddText.resources
