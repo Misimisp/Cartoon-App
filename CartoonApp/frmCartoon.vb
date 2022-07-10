@@ -10,7 +10,6 @@ Public Class frmCartoon
 
 #Region "Global Declaration"
 
-
     Private drawingPen As Pen
     Public Shared theFont As Font
     Private bitmapObject As Bitmap

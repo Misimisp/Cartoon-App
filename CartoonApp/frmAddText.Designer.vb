@@ -262,7 +262,8 @@ Partial Class frmAddText
         Me.btnCancel.Corners.UpperLeft = 19
         Me.btnCancel.Corners.UpperRight = 19
         Me.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCancel.DesignerSelected = False
+        Me.btnCancel.DesignerSelected = True
+        Me.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnCancel.FillType = CButtonLib.CButton.eFillType.GradientPath
         Me.btnCancel.ImageIndex = 0
         Me.btnCancel.Location = New System.Drawing.Point(54, 448)
@@ -308,6 +309,7 @@ Partial Class frmAddText
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.CancelButton = Me.btnCancel
         Me.ClientSize = New System.Drawing.Size(400, 531)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.btnOK)
