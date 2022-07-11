@@ -32,10 +32,11 @@ Partial Class frmCartoon
         Dim CBlendItems6 As CButtonLib.cBlendItems = New CButtonLib.cBlendItems()
         Dim CBlendItems7 As CButtonLib.cBlendItems = New CButtonLib.cBlendItems()
         Dim CBlendItems8 As CButtonLib.cBlendItems = New CButtonLib.cBlendItems()
-        Dim CBlendItems9 As CButtonLib.cBlendItems = New CButtonLib.cBlendItems()
         Dim CBlendItems10 As CButtonLib.cBlendItems = New CButtonLib.cBlendItems()
         Dim CBlendItems11 As CButtonLib.cBlendItems = New CButtonLib.cBlendItems()
         Dim CBlendItems12 As CButtonLib.cBlendItems = New CButtonLib.cBlendItems()
+        Dim CBlendItems13 As CButtonLib.cBlendItems = New CButtonLib.cBlendItems()
+        Dim CBlendItems9 As CButtonLib.cBlendItems = New CButtonLib.cBlendItems()
         Me.CButton2 = New CButtonLib.CButton()
         Me.btnClose = New CButtonLib.CButton()
         Me.pnlHeader = New System.Windows.Forms.Panel()
@@ -75,6 +76,7 @@ Partial Class frmCartoon
         Me.PbSurface = New System.Windows.Forms.PictureBox()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
+        Me.btnArmNeck = New CButtonLib.CButton()
         Me.pnlHeader.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -573,6 +575,7 @@ Partial Class frmCartoon
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnArmNeck)
         Me.GroupBox1.Controls.Add(Me.btnStickWoman)
         Me.GroupBox1.Controls.Add(Me.btnArmsDown)
         Me.GroupBox1.Controls.Add(Me.btnArmsUp)
@@ -591,14 +594,14 @@ Partial Class frmCartoon
         Me.btnStickWoman.BackgroundImage = Global.CartoonApp.My.Resources.Resources.f_arms_straight
         Me.btnStickWoman.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnStickWoman.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        CBlendItems9.iColor = New System.Drawing.Color() {System.Drawing.Color.White, System.Drawing.Color.White}
-        CBlendItems9.iPoint = New Single() {0.0!, 1.0!}
-        Me.btnStickWoman.ColorFillBlend = CBlendItems9
+        CBlendItems10.iColor = New System.Drawing.Color() {System.Drawing.Color.White, System.Drawing.Color.White}
+        CBlendItems10.iPoint = New Single() {0.0!, 1.0!}
+        Me.btnStickWoman.ColorFillBlend = CBlendItems10
         Me.btnStickWoman.ColorFillSolid = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.btnStickWoman.DesignerSelected = False
         Me.btnStickWoman.FillType = CButtonLib.CButton.eFillType.Solid
         Me.btnStickWoman.ImageIndex = 0
-        Me.btnStickWoman.Location = New System.Drawing.Point(101, 111)
+        Me.btnStickWoman.Location = New System.Drawing.Point(101, 108)
         Me.btnStickWoman.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.btnStickWoman.Name = "btnStickWoman"
         Me.btnStickWoman.Size = New System.Drawing.Size(70, 80)
@@ -611,14 +614,14 @@ Partial Class frmCartoon
         Me.btnArmsDown.BackgroundImage = Global.CartoonApp.My.Resources.Resources.m_arms_down
         Me.btnArmsDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnArmsDown.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        CBlendItems10.iColor = New System.Drawing.Color() {System.Drawing.Color.White, System.Drawing.Color.White}
-        CBlendItems10.iPoint = New Single() {0.0!, 1.0!}
-        Me.btnArmsDown.ColorFillBlend = CBlendItems10
+        CBlendItems11.iColor = New System.Drawing.Color() {System.Drawing.Color.White, System.Drawing.Color.White}
+        CBlendItems11.iPoint = New Single() {0.0!, 1.0!}
+        Me.btnArmsDown.ColorFillBlend = CBlendItems11
         Me.btnArmsDown.ColorFillSolid = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.btnArmsDown.DesignerSelected = False
         Me.btnArmsDown.FillType = CButtonLib.CButton.eFillType.Solid
         Me.btnArmsDown.ImageIndex = 0
-        Me.btnArmsDown.Location = New System.Drawing.Point(18, 111)
+        Me.btnArmsDown.Location = New System.Drawing.Point(18, 108)
         Me.btnArmsDown.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.btnArmsDown.Name = "btnArmsDown"
         Me.btnArmsDown.Size = New System.Drawing.Size(70, 80)
@@ -631,9 +634,9 @@ Partial Class frmCartoon
         Me.btnArmsUp.BackgroundImage = Global.CartoonApp.My.Resources.Resources.m_arms_up
         Me.btnArmsUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnArmsUp.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        CBlendItems11.iColor = New System.Drawing.Color() {System.Drawing.Color.White, System.Drawing.Color.White}
-        CBlendItems11.iPoint = New Single() {0.0!, 1.0!}
-        Me.btnArmsUp.ColorFillBlend = CBlendItems11
+        CBlendItems12.iColor = New System.Drawing.Color() {System.Drawing.Color.White, System.Drawing.Color.White}
+        CBlendItems12.iPoint = New Single() {0.0!, 1.0!}
+        Me.btnArmsUp.ColorFillBlend = CBlendItems12
         Me.btnArmsUp.ColorFillSolid = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.btnArmsUp.DesignerSelected = False
         Me.btnArmsUp.FillType = CButtonLib.CButton.eFillType.Solid
@@ -651,9 +654,9 @@ Partial Class frmCartoon
         Me.btnArmsStraight.BackgroundImage = Global.CartoonApp.My.Resources.Resources.m_arms_straight
         Me.btnArmsStraight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnArmsStraight.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        CBlendItems12.iColor = New System.Drawing.Color() {System.Drawing.Color.White, System.Drawing.Color.White}
-        CBlendItems12.iPoint = New Single() {0.0!, 1.0!}
-        Me.btnArmsStraight.ColorFillBlend = CBlendItems12
+        CBlendItems13.iColor = New System.Drawing.Color() {System.Drawing.Color.White, System.Drawing.Color.White}
+        CBlendItems13.iPoint = New Single() {0.0!, 1.0!}
+        Me.btnArmsStraight.ColorFillBlend = CBlendItems13
         Me.btnArmsStraight.ColorFillSolid = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.btnArmsStraight.DesignerSelected = False
         Me.btnArmsStraight.FillType = CButtonLib.CButton.eFillType.Solid
@@ -687,6 +690,26 @@ Partial Class frmCartoon
         Me.StatusStrip1.Size = New System.Drawing.Size(880, 22)
         Me.StatusStrip1.TabIndex = 15
         Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'btnArmNeck
+        '
+        Me.btnArmNeck.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.btnArmNeck.BackgroundImage = Global.CartoonApp.My.Resources.Resources.m_arms_up_neck
+        Me.btnArmNeck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnArmNeck.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        CBlendItems9.iColor = New System.Drawing.Color() {System.Drawing.Color.White, System.Drawing.Color.White}
+        CBlendItems9.iPoint = New Single() {0.0!, 1.0!}
+        Me.btnArmNeck.ColorFillBlend = CBlendItems9
+        Me.btnArmNeck.ColorFillSolid = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.btnArmNeck.DesignerSelected = True
+        Me.btnArmNeck.FillType = CButtonLib.CButton.eFillType.Solid
+        Me.btnArmNeck.ImageIndex = 0
+        Me.btnArmNeck.Location = New System.Drawing.Point(18, 194)
+        Me.btnArmNeck.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.btnArmNeck.Name = "btnArmNeck"
+        Me.btnArmNeck.Size = New System.Drawing.Size(70, 80)
+        Me.btnArmNeck.TabIndex = 8
+        Me.btnArmNeck.Text = ""
         '
         'frmCartoon
         '
@@ -762,5 +785,6 @@ Partial Class frmCartoon
     Friend WithEvents btnLoadBGImage As CButtonLib.CButton
     Friend WithEvents lblBGColor As gLabel.gLabel
     Friend WithEvents btnWhite As CButtonLib.CButton
+    Friend WithEvents btnArmNeck As CButtonLib.CButton
 
 End Class

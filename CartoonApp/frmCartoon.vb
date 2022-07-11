@@ -19,7 +19,10 @@ Public Class frmCartoon
     Private drawStickWoman As Boolean = False
     ReadOnly UndoStack As New Stack(Of Bitmap)
     ReadOnly RedoStack As New Stack(Of Bitmap)
+
+
     Private drawStickManArmsUp As Boolean = False
+    Private drawStickManArmNeck As Boolean = False
     Private drawStickManStraight As Boolean = False
     Private drawStickManArmsDown As Boolean = False
     Private mouseX, mouseY, mouseX1, mouseY1 As Integer
@@ -66,6 +69,7 @@ Public Class frmCartoon
         AddHandler btnClear.ClickButtonArea, AddressOf ClearImageDraw
         AddHandler btnArmsDown.ClickButtonArea, AddressOf GetArmsDown
         AddHandler TrackBrushSize.Scroll, AddressOf GetTrackBrushSize
+        AddHandler btnArmNeck.ClickButtonArea, AddressOf GetArmNeakMan
         AddHandler btnYellow.ClickButtonArea, AddressOf GetColorYellow
         AddHandler btnLoadBGImage.ClickButtonArea, AddressOf LoadBGImage
         AddHandler btnStickWoman.ClickButtonArea, AddressOf GetStickWoman
@@ -178,6 +182,12 @@ Public Class frmCartoon
 
             'Draw right arm
             graphicsObject.DrawLine(drawingPen, mouseX + size.HeadRadius, size.MidBody, mouseX + size.HeadDiameter, size.MidBody + (size.BaseUnit * 2))
+        ElseIf drawStickManArmNeck Then
+            'Draw left arm
+            graphicsObject.DrawLine(drawingPen, mouseX, size.MidBody + (size.BaseUnit * 2), mouseX + size.HeadRadius, size.MidBody - (size.BaseUnit * 2))
+
+            'Draw right arm
+            graphicsObject.DrawLine(drawingPen, mouseX + size.HeadRadius, size.MidBody - (size.BaseUnit * 2), mouseX + size.HeadDiameter, size.MidBody + (size.BaseUnit * 2))
         End If
     End Sub 'Drawing male stick figure
 
@@ -319,6 +329,7 @@ Public Class frmCartoon
 
     Private Sub GetArmsStraight()
         drawStickWoman = False
+        drawStickManArmNeck = False
         drawStickManArmsUp = False
         drawStickManStraight = True
         drawStickManArmsDown = False
@@ -327,19 +338,30 @@ Public Class frmCartoon
     Private Sub GetArmsUp()
         drawStickWoman = False
         drawStickManArmsUp = True
+        drawStickManArmNeck = False
         drawStickManStraight = False
         drawStickManArmsDown = False
     End Sub 'Get Arms up
 
     Private Sub GetArmsDown()
         drawStickWoman = False
+        drawStickManArmNeck = False
         drawStickManArmsUp = False
         drawStickManArmsDown = True
         drawStickManStraight = False
     End Sub 'Get arms down
 
+    Private Sub GetArmNeakMan()
+        drawStickWoman = False
+        drawStickManArmNeck = True
+        drawStickManArmsUp = False
+        drawStickManArmsDown = False
+        drawStickManStraight = False
+    End Sub 'Get Angry man
+
     Private Sub GetStickWoman()
         drawStickWoman = True
+        drawStickManArmNeck = False
         drawStickManArmsUp = False
         drawStickManArmsDown = False
         drawStickManStraight = False

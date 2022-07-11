@@ -11,3 +11,4 @@ G:\Documents\visual studio 2012\Projects\CartoonApp\CartoonApp\obj\Debug\Cartoon
 G:\Documents\visual studio 2012\Projects\CartoonApp\CartoonApp\obj\Debug\CartoonApp.pdb
 G:\Documents\visual studio 2012\Projects\CartoonApp\CartoonApp\bin\Debug\gLabel.dll
 G:\Documents\visual studio 2012\Projects\CartoonApp\CartoonApp\obj\Debug\CartoonApp.frmAddText.resources
+G:\Documents\visual studio 2012\Projects\CartoonApp\CartoonApp\obj\Debug\CartoonApp.vbprojResolveAssemblyReference.cache
