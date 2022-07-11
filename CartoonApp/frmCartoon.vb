@@ -20,6 +20,7 @@ Public Class frmCartoon
     ReadOnly UndoStack As New Stack(Of Bitmap)
     ReadOnly RedoStack As New Stack(Of Bitmap)
 
+    Private drawStickManAngry As Boolean = False
 
     Private drawStickManArmsUp As Boolean = False
     Private drawStickManArmNeck As Boolean = False
@@ -66,6 +67,7 @@ Public Class frmCartoon
         AddHandler btnBlack.ClickButtonArea, AddressOf GetColorBlack
         AddHandler btnWhite.ClickButtonArea, AddressOf GetColorWhite
         AddHandler btnGreen.ClickButtonArea, AddressOf GetColorGreen
+        AddHandler btnAgryMan.ClickButtonArea, AddressOf GetAngryMan
         AddHandler btnClear.ClickButtonArea, AddressOf ClearImageDraw
         AddHandler btnArmsDown.ClickButtonArea, AddressOf GetArmsDown
         AddHandler TrackBrushSize.Scroll, AddressOf GetTrackBrushSize
@@ -76,6 +78,7 @@ Public Class frmCartoon
         AddHandler cmbColors.SelectedIndexChanged, AddressOf GetBackground
         AddHandler btnCustomColor.ClickButtonArea, AddressOf CustomizeColorB
         AddHandler btnArmsStraight.ClickButtonArea, AddressOf GetArmsStraight
+
 
 
     End Sub 'Get all form objects active
@@ -188,6 +191,19 @@ Public Class frmCartoon
 
             'Draw right arm
             graphicsObject.DrawLine(drawingPen, mouseX + size.HeadRadius, size.MidBody - (size.BaseUnit * 2), mouseX + size.HeadDiameter, size.MidBody + (size.BaseUnit * 2))
+        ElseIf drawStickManAngry Then
+            'Draw left arm
+            graphicsObject.DrawLine(drawingPen, mouseX - (size.BaseUnit * 2), size.MidBody + (size.BaseUnit), mouseX + size.HeadRadius, size.MidBody - (size.BaseUnit * 2))
+            'graphicsObject.DrawLine(drawingPen, mouseX - size.HeadRadius, size.MidBody + (size.BaseUnit), mouseX + (size.BaseUnit * 2), size.MidBody - (size.BaseUnit * 2))
+
+            'graphicsObject.DrawLine(drawingPen, mouseX, size.MidBody - (size.BaseUnit * 2), mouseX + size.HeadRadius, size.MidBody)
+            graphicsObject.DrawLine(drawingPen, mouseX - size.MidBody + (size.BaseUnit), size.MidBody - (size.BaseUnit * 2), mouseX + size.HeadRadius, size.MidBody)
+
+
+            'Draw right arm
+            graphicsObject.DrawLine(drawingPen, mouseX + size.HeadRadius, size.MidBody - (size.BaseUnit * 2), mouseX + size.HeadDiameter + (size.BaseUnit * 2), size.MidBody + (size.BaseUnit))
+
+
         End If
     End Sub 'Drawing male stick figure
 
@@ -329,8 +345,9 @@ Public Class frmCartoon
 
     Private Sub GetArmsStraight()
         drawStickWoman = False
-        drawStickManArmNeck = False
+        drawStickManAngry = False
         drawStickManArmsUp = False
+        drawStickManArmNeck = False
         drawStickManStraight = True
         drawStickManArmsDown = False
     End Sub 'Get straight arms
@@ -338,6 +355,7 @@ Public Class frmCartoon
     Private Sub GetArmsUp()
         drawStickWoman = False
         drawStickManArmsUp = True
+        drawStickManAngry = False
         drawStickManArmNeck = False
         drawStickManStraight = False
         drawStickManArmsDown = False
@@ -345,24 +363,36 @@ Public Class frmCartoon
 
     Private Sub GetArmsDown()
         drawStickWoman = False
-        drawStickManArmNeck = False
+        drawStickManAngry = False
         drawStickManArmsUp = False
+        drawStickManArmNeck = False
         drawStickManArmsDown = True
         drawStickManStraight = False
     End Sub 'Get arms down
 
     Private Sub GetArmNeakMan()
         drawStickWoman = False
+        drawStickManAngry = False
         drawStickManArmNeck = True
         drawStickManArmsUp = False
+        drawStickManArmsDown = False
+        drawStickManStraight = False
+    End Sub 'Get Arms neck man
+
+    Private Sub GetAngryMan()
+        drawStickWoman = False
+        drawStickManAngry = True
+        drawStickManArmsUp = False
+        drawStickManArmNeck = False
         drawStickManArmsDown = False
         drawStickManStraight = False
     End Sub 'Get Angry man
 
     Private Sub GetStickWoman()
         drawStickWoman = True
-        drawStickManArmNeck = False
+        drawStickManAngry = False
         drawStickManArmsUp = False
+        drawStickManArmNeck = False
         drawStickManArmsDown = False
         drawStickManStraight = False
     End Sub 'Get stick female
